@@ -127,7 +127,6 @@ void editar_informacoes_de_um_item(Lista *l) {
             strcpy(Item->Status, novo_status == 1 ? "Pendente" : "Comprado");
             printf("\nStatus alterado com sucesso!\n");
             break;
-        case 4:
             return;
     }
 }
