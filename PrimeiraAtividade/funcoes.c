@@ -108,7 +108,7 @@ void editar_informacoes_de_um_item(Lista *l) {
     printf("\nO que voce quer editar no item %d?\n", numero);
     printf("1. Nome\n");
     printf("2. Status\n");
-    printf("4. Voltar\n");
+    printf("3. Voltar\n");
     scanf("%d", &opcao);
 
     switch (opcao) {
@@ -127,6 +127,8 @@ void editar_informacoes_de_um_item(Lista *l) {
             strcpy(Item->Status, novo_status == 1 ? "Pendente" : "Comprado");
             printf("\nStatus alterado com sucesso!\n");
             break;
+
+        case 3:
             return;
     }
 }
