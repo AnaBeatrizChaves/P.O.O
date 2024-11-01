@@ -1,9 +1,9 @@
 package exercicio_03_interface;
 
 public class QuartoDuplo implements Acomodacao, ServicoAdicional {
-    private static final double DIARIA = 180.0;
-    private static final double CAFE_DA_MANHA = 20.0;
-    private static final double LIMPEZA_EXTRA = 30.0;
+    private static final double diaria = 180.0;
+    private static final double cafe_manha = 20.0;
+    private static final double limpeza_extra = 30.0;
     private int numeroPessoas;
 
     public QuartoDuplo(int numeroPessoas) {
@@ -12,12 +12,12 @@ public class QuartoDuplo implements Acomodacao, ServicoAdicional {
 
     @Override
     public double calcularDiaria() {
-        return DIARIA;
+        return diaria;
     }
 
     @Override
     public double calcularServico(int numeroPessoas, int dias) {
-        return (CAFE_DA_MANHA * numeroPessoas + LIMPEZA_EXTRA) * dias;
+        return (cafe_manha * numeroPessoas + limpeza_extra) * dias;
     }
 
     @Override
@@ -25,7 +25,7 @@ public class QuartoDuplo implements Acomodacao, ServicoAdicional {
         double custoDiaria = calcularDiaria() * dias;
         double custoServico = calcularServico(numeroPessoas, dias);
         double custoTotal = custoDiaria + custoServico;
-        System.out.println("Quarto Duplo - Diária: R$" + DIARIA + ", Dias: " + dias +
-                           ", Pessoas: " + numeroPessoas + ", Total: R$" + custoTotal);
+        System.out.println("--> Quarto Duplo \n- Diária: R$" + diaria + "\n- Dias: " + dias +
+                "\n- Pessoas: " + numeroPessoas + "\n- Total: R$" + custoTotal);
     }
 }

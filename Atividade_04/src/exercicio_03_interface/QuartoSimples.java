@@ -25,7 +25,7 @@ public class QuartoSimples implements Acomodacao, ServicoAdicional {
         double custoDiaria = calcularDiaria() * dias;
         double custoServico = calcularServico(numeroPessoas, dias);
         double custoTotal = custoDiaria + custoServico;
-        System.out.println("Quarto Simples - Diária: R$" + diaria + ", Dias: " + dias +
-                           ", Pessoas: " + numeroPessoas + ", Total: R$" + custoTotal);
+        System.out.println("--> Quarto Simples \n- Diária: R$" + diaria + "\n- Dias: " + dias +
+                           "\n- Pessoas: " + numeroPessoas + "\n- Total: R$" + custoTotal);
     }
 }

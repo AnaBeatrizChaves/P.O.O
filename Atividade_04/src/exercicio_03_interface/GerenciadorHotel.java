@@ -6,7 +6,8 @@ public class GerenciadorHotel {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Digite a quantidade de dias da hospedagem:");
+        System.out.println("------------------ RESERVA DE HOTEL --------------------");
+        System.out.println("\nDigite a quantidade de dias da hospedagem:");
         int dias = scanner.nextInt();
 
         System.out.println("\nDigite o número de pessoas para o Quarto Simples:");
